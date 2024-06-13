@@ -21,7 +21,7 @@ if ueer_id == 'kjhe1234':
     sel_img_index = sel_opt.index(user_opt)
     #선택한 항목에 맞는 이미지 파일 지정
     img_file = image_files[sel_img_index]
-    img_local = Image.open("data"/img_file) #PIL 이미지 열기
+    img_local = Image.open(img_file) #PIL 이미지 열기
     st.image(img_local,caption=user_opt)  #이미지 표시
 else:
     st.write("ID가 다르면 안보입니다.")
