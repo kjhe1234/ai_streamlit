@@ -9,14 +9,14 @@ ueer_id = st.sidebar.text_input("ID입력",value="streamlit",max_chars=15)
 user_pw = st.sidebar._text_input("PW입력:",value="abcd",type='password')
 
 st.sidebar.header("셀렉트박스")
-sel_opt = ['진주 귀걸이를 한 소녀','별이 빛나는 밤','절규','월하정인']
+sel_opt = ['진주 귀걸이를 한 소녀','별이 빛나는 밤','절규','월하정인','고양이','강아지']
 user_opt = st.sidebar.selectbox("좋아하는 작품은?",sel_opt)
 st.sidebar.write("선택한 작품은:",user_opt)
 
 #매인 화면
-st.title("스트림릿의 사이드바")
+st.title("streamlit of sidebar")
 
-image_files=['Vermeer.png','Gogh.png','Munch.png','ShinYoonbok.png']
+image_files=['Vermeer.png','Gogh.png','Munch.png','ShinYoonbok.png','cat.png','dog.png']
 
 sel_img_index = sel_opt.index(user_opt)
 #선택한 항목에 맞는 이미지 파일 지정
